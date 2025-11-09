@@ -118,9 +118,7 @@ Prints "C is fun" a number of times based on the first argument. Prints "Missing
 ```javascript
 const x = parseInt(process.argv[2], 10);
 
-if (isNaN(x) || x <= 0) {
-  console.log("Missing number of occurrences");
-} else {
+if (x > 0) {
   for (let i = 0; i < x; i++) {
     console.log("C is fun");
   }
