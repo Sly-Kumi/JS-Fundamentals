@@ -124,3 +124,21 @@ if (x > 0) {
   }
 }
 ```
+
+## 📄 File: 8-square.js
+
+### Description
+Prints a square using the character X. The size of the square is given by the first command-line argument. Prints "Missing size" if the argument is missing or invalid. Uses a loop.
+
+### Code Example
+```javascript
+const size = parseInt(process.argv[2], 10);
+
+if (isNaN(size) || size <= 0) {
+  console.log("Missing size");
+} else {
+  for (let i = 0; i < size; i++) {
+    console.log("X".repeat(size));
+  }
+}
+```
