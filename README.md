@@ -159,3 +159,20 @@ const b = parseInt(process.argv[3], 10);
 
 console.log(add(a, b));
 ```
+
+## 📄 File: 10-factorial.js
+
+### Description
+Computes and prints the factorial of the first command-line argument recursively. Prints 1 if the argument is missing or not a number.
+
+### Code Example
+```javascript
+function factorial(n) {
+  if (n <= 1) return 1;
+  return n * factorial(n - 1);
+}
+
+const num = parseInt(process.argv[2], 10);
+
+console.log(factorial(isNaN(num) ? 0 : num));
+```
