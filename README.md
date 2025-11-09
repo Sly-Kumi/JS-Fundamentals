@@ -78,3 +78,20 @@ const arg2 = process.argv[3];
 
 console.log(arg1 + " is " + arg2);
 ```
+
+## 📄 File: 5-to_integer.js
+
+### Description
+Prints the first argument converted to an integer. If the argument can't be converted, prints "Not a number".
+
+### Code Example
+```javascript
+const arg = process.argv[2];
+const num = parseInt(arg, 10);
+
+if (isNaN(num)) {
+  console.log("Not a number");
+} else {
+  console.log("My number: " + num);
+}
+```
