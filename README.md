@@ -95,3 +95,17 @@ if (isNaN(num)) {
   console.log("My number: " + num);
 }
 ```
+
+## 📄 File: 6-multi_languages_loop.js
+
+### Description
+Prints three lines of text using an array and a loop. Demonstrates iteration over an array without if/else statements.
+
+### Code Example
+```javascript
+const lines = ["C is fun", "Python is cool", "JavaScript is amazing"];
+
+for (let i = 0; i < lines.length; i++) {
+  console.log(lines[i]);
+}
+```
