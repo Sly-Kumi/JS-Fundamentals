@@ -142,3 +142,20 @@ if (isNaN(size) || size <= 0) {
   }
 }
 ```
+
+## 📄 File: 9-add.js
+
+### Description
+Prints the addition of two integers passed as command-line arguments. Defines a function `add(a, b)` to perform the addition.
+
+### Code Example
+```javascript
+function add(a, b) {
+  return a + b;
+}
+
+const a = parseInt(process.argv[2], 10);
+const b = parseInt(process.argv[3], 10);
+
+console.log(add(a, b));
+```
